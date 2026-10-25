@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Restaurants</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/resturaunts">Restaurants</a>
+    </nav>
+    <hr>
+
+    <h1>All Resturaunts</h1>
+
+    <ul>
+        <% resturaunts.forEach(function(item) { %>
+            <li>
+                <a href="/resturaunts/<%= item.id %>">
+                    <%= item.name %>
+                </a>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>
